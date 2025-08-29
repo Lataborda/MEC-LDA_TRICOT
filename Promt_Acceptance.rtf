@@ -1,0 +1,273 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Quiero una taxonom\'eda para Means\'96End Chain en espa\'f1ol. Define tres conjuntos de categor\'edas: - A (Atributos): variables observables del producto. - C (Consecuencias): efectos percibidos de usar/comprar. - V (Valores): metas/valores personales subyacentes. Tarea: 1) A partir de estas respuestas abiertas (texto abajo), propone listas A, C y V. 2) Para cada categor\'eda, entrega: - name - definition (1\'962 frases, operativa y no redundante) - include_terms (10\'9625 palabras/frases clave del corpus) - exclude_terms (si aplica) - 2\'963 ejemplos cortos del corpus 3) Evita solapamientos. Si dos categor\'edas se parecen, fusi\'f3nalas y di por qu\'e9. 4) Mant\'e9n 10\'9618 categor\'edas A, 8\'9615 categor\'edas C, 6\'9612 categor\'edas V. 5) Salida estricta en JSON con campos: \{"A":[...], "C":[...], "V":[...]\} sin texto extra.\
+\
+Texto de entrenamiento (cada l\'ednea es \'93Best :: raz\'f3n\'94):\
+"Prematura	Por la produccion y es adaptable                                                                                        \
+Rapidita	se adapta al clima de nuestra zona                                                                                      \
+La Sper industrial	por que dura mas tiempo despues de arranque y buena para negocio                                                        \
+Prematura	tiene caracter\'edsticas similares a la sembrada en la zona                                                                \
+La Duradera	vale mas y la yuca crese mas tambien es duradera                                                                        \
+Doble Propsito	por que sale buena y la mas vendida                                                                                     \
+La Duradera	en m\'e1s rapido para producir                                                                                             \
+Prematura	por que al momento de vender me da ganancia en menos tiempos y no se da\'f1a pronto                                    \
+Rapidita	tiene un parecido a la Chirosa y por su rendimiento y durabilidad postcosecha                                           \
+Prematura	Porque rinde en tiempo y cosecha                                                                                        \
+La Sper industrial	por que es muy rendidora al momento de su cosecha se cultiva a los 6 meses\
+Doble Propsito	por que sirve para consumir y para las empresas industriales y tiene alto rendimiento al cosechar                       \
+La rendidora	por el rendimiento de su cosecha                                                                                         \
+Doble Propsito	por que es harinosa y por sus vitaminas                                                                                      \
+Doble Propsito	rendimiento                                                                                                             \
+Rapidita	por el sistema de cosecha que es mas r\'e1pido y tambien por adaptarse al cambio clim\'e1tico de la zona                                \
+La rendidora	menor tiempo de deterioro                                                                                               \
+La Amarilla	mayor produccion por hectaria                                                                                           \
+Doble Propsito	Se adapta a cualquier clima.  residencia a las plagas                                                                   \
+Prematura	por su rendimiento de cosecha                                                                                           \
+Rapidita	por su rendimiento y color                                                                                              \
+Doble Propsito	por su mayor rendimiento                                                                                                \
+La rendidora	dura mas despu\'e9s de cosechada                                                                                            \
+Doble Propsito	por su versatilidad y calidad                                                                                           \
+La rendidora	 Al cosecharla da unos d\'edas m\'e1s para que se pueda cosechar                                                              \
+La Amarilla	por la resistencia a enfermedades                                                                                         \
+La Sper industrial	por el tiempo de durabilidad depues de cosecha                                                                          \
+Prematura	Por que tiene dos mercados para comercializar                                                                           \
+Doble Propsito	Por la calidad de yuca el rendimiento                               \
+La Duradera	Es una yuca con buenas caracteristicas para la salud humana                                                             \
+La rendidora	Porque puede demorar varios dias arrancada sin da\'f1arse                                                                  \
+Rapidita	Por su rendimiento productivo\
+Rapidita	Por el tiempo de cosecha y por su rendimiento                                                                           \
+Prematura	Por que tiene mayor follaje y porque la mata es m\'e1s cargada y por su durabilidad postcosecha.                           \
+Prematura	Por la textura y por los beneficios para la salud del ser humano                                                        \
+La Duradera	por su tiempo de cosecha                                                                                                \
+La rendidora	Por el rendimiento productivo\
+La Sper industrial	Da mejor rendimiento productivo                                                                                         \
+Doble Propsito	Por su producci\'f3n y su adaptabilidad\
+La rendidora	por su rendimiento al cosechar junto a su color blanco y harinoso                                                       \
+La Duradera	como su nombre lo dice es rendidora al momento de cosechar y aumenta la producci\'f3n                                     \
+La rendidora	por sus cualidades y su rendimiento de cosechar                                                                         \
+Doble Propsito	por su rendimiento                                                                                                      \
+La rendidora	Al ser mas resistente aporta mayor rentabilidad para el consumidor                                                            \
+La Amarilla	rendimiento mayor                                                                                                       \
+La Duradera	el producto se obtiene mas r\'e1pido                                                                                               \
+La Duradera	mejor producci\'f3n                                                                                                        \
+La rendidora	tiene de 20 o 30% m\'e1s de rendimiento\
+Rapidita	tiene buena comercializacion y buena producci\'f3n                                                                         \
+La rendidora	mejor tiempo de conservaci\'f3n                                                                                            \
+Doble Propsito	Por su resistencia a las plagas y rendimiento en producci\'f3n                                                             \
+La Amarilla	menos plagas y rendimiento  mayor                                                                                        \
+La rendidora	es mas comercial en la zona                                                                                             \
+Doble Propsito	por que se conserva durante y despu\'e9s de cosecha                                                                        \
+Doble Propsito	por su rendimiento y textura al cocinar                                                                                 \
+La Duradera	Por su durabilidad postcosecha                                                                                         \
+La rendidora	Porque es la que m\'e1s se produce en est\'e1 tierra y tiene mayor duraci\'f3n                                                   \
+Rapidita	por su rendimiento y bajo costo para combatir plagas                                                                    \
+Doble Propsito	mayor productividad                                                                                                     \
+La rendidora	por su alto rendimiento en cosechar                                                                                     \
+Rapidita	por su tiempo de producci\'f3n en cosechar                                                                                 \
+La Duradera	versatil                                                                                                                \
+Doble Propsito	gano m\'e1s (mayor rentabilidad)                                                                                                            \
+La Duradera	prefiere rendimiento que buena cocci\'f3n                                                                                 \
+Doble Propsito	para opciones de venta industrial                                                                                        \
+La rendidora	ahorrar gas al cocinar                                                                                                            \
+La rendidora	concina mas rapido                                                                                                      \
+Rapidita	por que es dulce y me sirce para autoconsumo                                                                            \
+La Amarilla	Por que es apta para el consumo humano y tiene m\'e1s comercio                                                             \
+Rapidita	nos ayuda a la salud digestiva                                                                                          \
+Rapidita	Por su producci\'f3n y por su adaptabilidad a las condiciones del clima                                                    \
+La rendidora	Por su comercio al ser una yuca dulce tiene salida en el mercado      \
+Rapidita	Sirve para el comercio y la manutenci\'f3n de uno en la casa                                                               \
+Doble Propsito	Pare (se cosecha) mas r\'e1pido y por su producci\'f3n                                                                                     \
+Doble Propsito	Por su producci\'f3n y su textura                                                                                          \
+La Sper industrial	Se produce m\'e1s y es muy comercial                                                                                       \
+La Sper industrial	Por su alta producci\'f3n y adaptabilidad                                                                                  \
+La Sper industrial	Por su rendimiento                                                                                                      \
+La Sper industrial	por su alto rendimiento productivo                                                                                      \
+La Duradera	por su rendimiento y contextura                                                                                         \
+La Duradera	Es una yuca que pare m\'e1s (rendimiento mayor)                                                                                                \
+La rendidora	Por su rendimiento y resistencia                                                                                        \
+La rendidora	Por su rendimiento y adaptabilidad a las condiciones climaticas                                                         \
+La Duradera	porque dura m\'e1s despues de cosechar\
+La rendidora	Por su doble prop\'f3sito ya que sirve para auto consumo y negocio          \
+La rendidora	rinde mas                                                                                                               \
+Rapidita	Por sus beneficios para la salud humana                                                                                 \
+La rendidora	Por el tiempo que demora despues de cosechar                                                                            \
+La Amarilla	Por el tiempo de duraci\'f3n que nos ofrece despu\'e9s de arrancar                                                            \
+La Duradera	por su alto rendimiento de cosecha lo arinosa y el color blanco                                                         \
+La rendidora	por su rendimiento en el momento de cosechar ella pare mas                                                                   \
+La rendidora	por su rendimiento al momento de cosechar el tiempo es mas duradero                                                     \
+La rendidora	por su rendimiento al cosechar y color                                                                                  \
+Rapidita	por su rendimiento para m\'e1s                                                                                             \
+La rendidora	por su rendimiento en cosecha                                                                                         \
+La rendidora	la tomo como opci\'f3n por que es dulce y sale harinosa y contiene vitamina pero no es mi preferida                         \
+La rendidora	por su rendimiento                                                                                                      \
+La Duradera	por su rapidez en el crecimiento                                                                                        \
+La Amarilla	por su rendimiento al cosechar                                                                                          \
+Rapidita	Mayor duraci\'f3n y rendimiento perfectos para la salida al mercado                                                        \
+Doble Propsito	rinde mas el producto                                                                                                   \
+La Duradera	resistente a las plagas y por rendimiento                                                                               \
+La Duradera	por conocimiento y buena producci\'f3n y resistente                                                                        \
+La rendidora	por su rendimiento                                                                                                      \
+Rapidita	Rinde mas y dura mas despu\'e9s de arranque                                                                                \
+Rapidita	por que rinde y es comercial                                                                                            \
+La rendidora	por que al cosecharla demora mas sin da\'f1arse                                                                                      \
+La rendidora	Dura mas tiempo despu\'e9s de cosechar                                                                                     \
+Prematura	se adapta a la tierra de la costa caribe                                                                                \
+La rendidora	rinde 20 o 30 % m\'e1s\
+La rendidora	por rendimiento                                                                                                         \
+Rapidita	por que rinde mas que las que se siembran en esta zona                                                                  \
+Rapidita	tiene un buen color y tiene mayor adaptaci\'f3n que las otras                                                              \
+La Duradera	dura mas tiempo despues de cosechar                                                                                     \
+La rendidora	favorece para venderla en el mercado y se adapta al clima                                                               \
+Prematura	M\'e1s resistente y a la hora de cosechar dura mas tiempo                                                                  \
+Prematura	por su rendimiento                                                                                                      \
+Doble Propsito	produce mas cantidad y se adapta a cualquier clima                                                                      \
+Rapidita	Rinde m\'e1s esta r\'e1pido de arrancar                                                                                           \
+La Amarilla	por que dura mas sin da\'f1arse                                                                                                      \
+La rendidora	produce m\'e1s y m\'e1s rentable                                                                                              \
+La Duradera	tiene ventaja, se cosecha mas r\'e1pido                                                                                           \
+Doble Propsito	porque su tiempo de producci\'f3n es menor                                                                                 \
+La rendidora	Por su alto rendimiento en cosecha                                                                                      \
+Rapidita	Por su rendimiento productivo y porque es m\'e1s comercial                                                                 \
+La rendidora	Me gusta para consumo y porque es buena para la salud                                                                   \
+Doble Propsito	Por el tiempo que demora despu\'e9s de arrancada sin da\'f1arse                                                                       \
+La Sper industrial	por su tiempo de cosechar despu\'e9s de arrancar sin da\'f1arse                                        \
+La rendidora	por que se puede vender al mercado como yuca comestible y tambien industrial                                            \
+Rapidita	mayor rendimiento                                                                                                       \
+La rendidora	Rendimiento y gusta por su sabor                                                                                        \
+Doble Propsito	es resistente a las plagas y climas y es muy rendidora al momento de cosechar\
+Doble Propsito	Su producci\'f3n y resistencia a las plagas                                                                                \
+La rendidora	por su rendimiento en cosecha su textura y color                                                                     \
+La Amarilla	Porque al momento de cosechar tengo un rendimiento favorable para vender y es resistente a las zonas                    \
+Rapidita	Porque al momento de vendarla tengo dos opciones para consumo humano o para empresas industriales                       \
+Doble Propsito	por que es adaptable a los dos mercado\
+La rendidora	Tiene dos opciones de mercado                                                                                            \
+Rapidita	Rendimiento\
+La rendidora	Por ser una yuca dulce adem\'e1s es muy buena para la salud humana                                                         \
+La rendidora	Por su resistencia a enfermedades y a los climas                                                                        \
+La Sper industrial	Por su rendimiento productivo y resiatencia a enfermedades                                                              \
+Doble Propsito	Por su producci\'f3n                                                                                                       \
+Rapidita	se ve mas productiva                                                                                                    \
+Rapidita	se produce mas r\'e1pido                                                                                                   \
+Prematura	es apetecida por la gente y produce cantidad                                                                            \
+Doble Propsito	permite vender m\'e1s r\'e1pido                                                                                               \
+Prematura	rinde bastante y mejora la econom\'eda                                                                                     \
+Doble Propsito	mejor comercio                                                                                                          \
+La rendidora	Porque es mas r\'e1pido al cosechar                                                                                        \
+La rendidora	por su rendimiento                                                                                                      \
+Rapidita	por su alto rendimiento                                                                                                 \
+Rapidita	mayor producci\'f3n y rendimiento                                                                                          \
+Rapidita	por que se parece a la blanca                                                                                           \
+La Sper industrial	certificada que tenga resistencia                                                                                       \
+La rendidora	Por su producci\'f3n\
+Rapidita	Es yuca que pare mucho y es muy rendidora                                                                               \
+Prematura	Por su rendimiento en producci\'f3n y economiza tiempo en cocci\'f3n                                                          \
+La rendidora	Porque puedo incursionar en las dos industrias o comercio, ademas me sirve para autoconsumo     \
+Prematura	Alto rendimiento y porque me sirve para autoconsumo                                                                     \
+Rapidita	Por su textura y producci\'f3n                                                                                             \
+La rendidora	Por sus beneficios a la salud humana                                                                                    \
+La Duradera	Por su producci\'f3n y adaptabilidad                                                                                       \
+Prematura	M\'e1s rendidora en cuanto a producci\'f3n y por ser una yuca dulce que me sirve para consumo                                 \
+La rendidora	la puedo comercializar como yuca dulce y tambien puedo venderla a la industria de la yuca amarga                        \
+La rendidora	porque se ve como la Chirosa pare la mata (se cosecha) a su tiempo, la resistencia despu\'e9s del arranque es mayor, muy rendidora         \
+La rendidora	Por su alta producci\'f3n y su adaptabilidad a los climas                                                                  \
+Rapidita	Me demora m\'e1s sin da\'f1arse despu\'e9s de arrancarla                                                                                     \
+Rapidita	Me gusta porque es muy harinosa la mata pare bueno (produce bastante) no se da\'f1a mucho despu\'e9s de cosechar, y es muy parecida a la Chirosa  \
+Rapidita	Por que es una yuca con alta producci\'f3n                                                                                 \
+Prematura	Por que es resistente a las enfermedades                                                                                \
+La rendidora	Por su rendimiento productivo y adaptabilidad a los climas                                                              \
+Doble Propsito	Por su rendimiento productivo y adaptabilidad a las condiciones climaticas                                              \
+Rapidita	Por la hoja se ve que es mas productora                                                                                 \
+Rapidita	por mantener su color y su rendimiento                                                                                  \
+La Duradera	Por su rendimiento y adaptabilidad                                                                                      \
+Rapidita	Por su rendimiento productivo, ademas que sirve para autoconsumo      \
+La Duradera	Por su rendimiento y tiempo de cosecha                                                                                  \
+Rapidita	es resistente a enfermedades y tiene dos salidas                                                                        \
+Rapidita	Es m\'e1s viable por su producci\'f3n          \
+La rendidora	Porque tambien me sirve para autoconsumo                                                                                \
+La rendidora	La semilla es similar a una que acostumbro a cultivar y he tenido buena producci\'f3n con ella                             \
+La Amarilla	Tiene m\'e1s producci\'f3n                                                                                                    \
+Rapidita	Por la textura y por el color ademas por su cocci\'f3n           \
+La rendidora	La semilla es m\'e1s gruesa y m\'e1s llamativa tambien por su producci\'f3n        \
+Rapidita	Se adapta a las condiciones del clima                                                                                   \
+La rendidora	Por su textura y color adem\'e1s de que se adapta a las condiciones clim\'e1ticas, tiene buena producci\'f3n \
+Rapidita	Por el rendimiento y adaptabilidad                                                                                      \
+La rendidora	sabrosa \
+Rapidita	por que se produce mas rapido                                                                                           \
+La Duradera	sale rapido                                                                                                             \
+Rapidita	porque rinde y pare mas (produce m\'e1s)                                                                                               \
+La rendidora	por que rinde mas y es mas comercial                                                                                    \
+Doble Propsito	por lo r\'e1pido que es y no da mucho desperdicio                                                                          \
+La rendidora	es mas rapida para comercializar                                                                                        \
+La rendidora	cumple con el gusto de las personas y es comercial                                                                         \
+La Duradera	menos tiempo de cocci\'f3n ..engruesa poco y pare (produce) bastante                                                                 \
+Prematura	por el comercio y la facilidad de venta que tiene                                                                       \
+Prematura	es mas buena para comercio                                                                                              \
+La Duradera	mejor comercio                                                                                                          \
+La Duradera	mejor para comercio                                                                                                     \
+La Duradera	por que a los cuatro meses da rentabilidad y sale harinosa y produce bastante                                     \
+La rendidora	es rendidora en el tiempo de cosechar y dura buen tiempo despu\'e9s de cosechar                                            \
+La Duradera	por el rendimiento que ella tiene despu\'e9s de cosechar y es una meta que pare produce mucho                                      \
+Rapidita	por que su color Blanco y el rendimiento que da al cosechar                                                             \
+Doble Propsito	por su tiempo de duraci\'f3n despu\'e9s de cosechar y sale harinosa                                                            \
+Prematura	Por su rendimiento y resistencia a enfermedades                                                                         \
+Rapidita	me gusta por el rendimiento y durabilidad que tiene despu\'e9s de cosecha seve rendidora                                   \
+La Amarilla	por su rendimiento del 10% y lo harinosa que muestra su color blanco\
+La rendidora	por su tiempo en duraci\'f3n despu\'e9s de cosechar                                                                           \
+Rapidita	por su rendimiento es una yuca que sale parida y es soportable a lascplagas                                             \
+Doble Propsito	Me gusta por que es muy parecida a la Chirosa y son muy productiva a parte de que tiene un tiempo de vida alto despu\'e9s de cosecha\
+La rendidora	es muy buena Harinosa y poco se da\'f1a  \
+Rapidita	por su rendimiento crecimiento y adaptabilidad a los climas    \
+La Amarilla	por lo harinosa y por las vitaminas de la visita                                                                         \
+La rendidora	por el rendimiento en su cosecha y crecimiento                                                                          \
+La rendidora	por su rendimiento en el momento de la cosechar                                                                         \
+La Sper industrial	la rendidora por que despu\'e9s de cosechar dura mas tiempo para no da\'f1arse                                                \
+La Duradera	se asemejan a la semilla Chirosa y es rendidora a pesar del tiempo adelantado que se le da                                \
+La rendidora	por su alto rendimiento harinoso y en su cosecha es muy rendimiento alto                                                 \
+La rendidora	por que se acdata al clima y se conserva                                                                                \
+Rapidita	por su rendimiento al momento de ser cosechada                                                                          \
+La Duradera	por su tiempo en duraci\'f3n despu\'e9s de cosecha no se da\'f1a ni se coloca borra                                              \
+La rendidora	por su contextura y rendimiento                                                                                         \
+Doble Propsito	es harinosa y sirve para la visi\'f3n                                                                                        \
+Prematura	es resistente a las plagas y es rendidora al momento de cosechar           \
+Rapidita	por su rendimiento al momento de la cosecha y despu\'e9s de cocinar                                                        \
+La rendidora	Tiene mayor adaptabilidad                                                                                               \
+La rendidora	Porque tiene mayor facilidad al salir al mercado                                                                        \
+Rapidita	por su rendimiento y tiempo de coccion                                                                                  \
+La rendidora	tiene mas producto y peso                                                                                               \
+La rendidora	tiene comercio                                                                                                          \
+La Sper industrial	El tiempo en que se desarolla favorece  al cultivador                                                                   \
+La Amarilla	es conocida y tiene una buena apariencia para el consumidor                                                             \
+Rapidita	es arinosa y tiene comercio                                                                                             \
+Rapidita	resistencia a la plaga y rendimiento                                                                                    \
+La rendidora	mayor tiempo de duraci\'f3n                                                                                                \
+Rapidita	Mayor rendimiento                                                                                                       \
+Prematura	se adapta al terreno de f\'e1cil cocci\'f3n resistente a las enfermedades  \
+Doble Propsito	por que demora menos y resistente a la plaga                                                                            \
+La rendidora	Rinde mas y es comercial                                                                                                \
+La Duradera	se asemeja a la yuca de la zona                                                                                         \
+La Duradera	por que sale en menor tiempo y acta para el consumo humano                                                              \
+La rendidora	por rendimiento y dura mas tiempo despues de ser cosechada                                                              \
+Doble Propsito	se compara a la de la zona y rinde mas el cultivo                                                                       \
+Rapidita	demora mas tiempo despues de arranque                                                                                   \
+La rendidora	Da mas rendimiento por tonelada                                                                                         \
+Doble Propsito	el tiempo de cosechar es mas rapido                                                                                     \
+La Amarilla	el terreno donde se cultiva es muy bajo como ella demora menos para cosechar                                            \
+La Amarilla	Es mas rapido y tolerante a las plaga                                                                                   \
+Rapidita	la semilla es acta para el terreno y dura mas a la hora de cosechar                                                     \
+Doble Propsito	se adapta al terreno  y es mas rapida a la hora de cosechar                                                             \
+La Amarilla	por que tiene dos obciones de venta                                                                                     \
+Rapidita	Se adapta al clima y tolera las plagas y es mas rapida su cosecha                                                       \
+La Duradera	es resistente a la plaga                                                                                                \
+Rapidita	Rinde mas el cultivo                                                                                                      \
+La rendidora	se parece a la que uno siembra en la zona                                                                              \
+La Duradera	se adapta a todo y al mercado                                                                                           \
+Rapidita	Se adapta al terreno de la zona                                                                                         \
+Prematura	Por su textura y sabor                                                                                                  \
+La Duradera	por que es similar a la variedad comercial de la zona y es tolerante a las plaga y el clima                                                \
+La Duradera	por su rendimiento                                                                                                      \
+La Duradera	rinde mas en producci\'f3n"                                                                                             }

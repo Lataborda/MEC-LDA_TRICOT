@@ -1,0 +1,481 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Quiero una taxonom\'eda para Means\'96End Chain en espa\'f1ol. Define tres conjuntos de categor\'edas:\
+- A (Atributos): variables observables del producto.\
+- C (Consecuencias): efectos percibidos de usar/comprar.\
+- V (Valores): metas/valores personales subyacentes.\
+\
+Tarea:\
+1) A partir de estas respuestas abiertas (texto abajo), propone listas A, C y V.\
+2) Para cada categor\'eda, entrega:\
+   - name\
+   - definition (1\'962 frases, operativa y no redundante)\
+   - include_terms (10\'9625 palabras/frases clave del corpus)\
+   - exclude_terms (si aplica)\
+   - 2\'963 ejemplos cortos del corpus\
+3) Evita solapamientos. Si dos categor\'edas se parecen, fusi\'f3nalas y di por qu\'e9.\
+4) Mant\'e9n 10\'9618 categor\'edas A, 8\'9615 categor\'edas C, 6\'9612 categor\'edas V.\
+5) Salida estricta en JSON con campos: \{"A":[...], "C":[...], "V":[...]\} sin texto extra.\
+\
+Texto de entrenamiento (cada l\'ednea es \'93Worst :: raz\'f3n\'94):\
+"Rapidita	no es comercial por el color                                                                                            \
+La Amarilla	no tiene rendimiento y no es comercial en la zona                                                                       \
+La rendidora	No es comercial                                                                                                         \
+Doble Propsito	no es comercial                                                                                                         \
+Doble Propsito	porque en poco tienpo se pone mala                                                                                      \
+La Sper industrial	menos comercial                                                                                                         \
+Prematura	es poco comercial                                                                                                       \
+La Amarilla	me par\'e9ce  bueno pero no creo en los crecimientos adelantado                                                            \
+La Amarilla	Me gusto m\'e1s la primera                                                                                                 \
+Rapidita	Porque es de uso industrial                                                                                             \
+La Duradera	por que germina en el tiempo adecuado no cumple con su clico de crecimiento                                                \
+La Amarilla	nunca la he escuchado y sus caracter\'edsticas no me dan seguridad son semillas que no creen mucho                         \
+La Amarilla	por que no tiene comprador                                                                                              \
+La Sper industrial	por el tiempo de comercio                                                                                               \
+Prematura	no es comercial en la zona                                                                                              \
+Prematura	menor rendimiento de producion                                                                                          \
+La Amarilla	no es conocida en la zona                                                                                               \
+Prematura	baja produccion                                                                                                         \
+La rendidora	No conocida en la zona                                                                                                  \
+Doble Propsito	por su color no tiene mercado                                                                                         \
+La Amarilla	por que no se vende mucho y es para animales                                                                            \
+Prematura	no es comercial                                                                                                         \
+Prematura	no es comercial en la zona                                                                                              \
+La rendidora	No tiene un rendimiento superior al general                                                                             \
+Rapidita	Da menos en production solo del 20 o 30%\
+La Sper industrial	no tiene un buen comercio                                                                                               \
+Rapidita	porque la industrial da\'f1a la tierra y no es comercial                                                                   \
+Doble Propsito	No es muy conocida y ac\'e1 no hay tanto comercio para ese tipo de yuca                                                    \
+La Amarilla	 No tiene buena acogida en la zona ya que es similar una variedad que se cultiva por ac\'e1                      \
+Prematura	nunca he cultivado yuca amarga                                                                                          \
+La Amarilla	Como es \'91doble prop\'f3sito\'92 puede que me salga amarga                                                                       \
+La Duradera	 uno como productor busca una yuca que produzca bastante en comparaci\'f3n con la otra esta tiene menos producci\'f3n  \
+La Amarilla	El porcentaje de rendimiento productivo es inferior a la rendidora                                                      \
+Doble Propsito	Es parecida a una yuca que se conoce como \'91la bagre\'92 la cual no fue muy bien acogida     \
+Rapidita	Menor porcentaje de producci\'f3n en comparaci\'f3n a otras variedades como la doble prop\'f3sito\
+La Sper industrial	por que es industrial menos comercial                                                                                   \
+La Amarilla	No me gusto, me gusto m\'e1s la rendidora   \
+Rapidita	por el color no es comercial y por lo general las perdonas piensan que es yuca mala                                     \
+La Amarilla	 adem\'e1s su color es muy llamativo, Por ser una yuca amarga ac\'e1 en la zona no tiene comercio y toca ech\'e1rselo al ganado                                             \
+La Duradera	por que es una referencia de yuca amarga y no es comercial                                                               \
+La Amarilla	no me gusta trabajar con yuca industrial es muy da\'f1ina en la tierra y el precio es bajo                                 \
+La Amarilla	por su tiempo de comercio                                                                                               \
+La Duradera	por que no la conozco                                                                                                   \
+La Amarilla	No me pareci\'f3 llamativa                                                                                                 \
+Doble Propsito	no es comercial en la zona                                                                                              \
+La Sper industrial	no es comercial en la zona por el color                                                                                 \
+La Amarilla	no la conocen                                                                                                           \
+Doble Propsito	por que es menos y tiempo y queda delgada y menos rendimiento                                                           \
+La Amarilla	por la comercializaci\'f3n, por ser de color amarilla no tiene mercado\
+La Sper industrial	No es comercial en la zona                                                                                              \
+La Sper industrial	es menos rentabilidad                                                                                                   \
+Doble Propsito	no se maneja en la zona                                                                                                 \
+Doble Propsito	No tiene acogida en el mercado por el color                                                                             \
+La Sper industrial	su canal comercial no es bueno y da\'f1a la tierra                                                                         \
+La Sper industrial	Desconocida y no es comercial en la zona                                                                                \
+Prematura	por ser yuca amarga                                                                                                     \
+La Amarilla	Nunca la he cultivado                                                                                                   \
+Prematura	no es comercial en la zona                                                                                              \
+La Sper industrial	no es comercial en la zona                                                                                              \
+La Sper industrial	por su color amarillo                                                                                                   \
+La Sper industrial	por su tiempo de comercio                                                                                               \
+La Sper industrial	no vendo amarma este a\'f1o mucha gente se quedo con amarga                                                                \
+Prematura	prefiero el tiempo que ek rendimiento puede arrancar y sembrar mas r\'e1pido  \
+Prematura	coccion para que si no rinde                                                                                            \
+La Sper industrial	no tiene mercado                                                                                                        \
+La Amarilla	no la conoc\'eda                                                                                                           \
+Doble Propsito	no es comercial                                                                                                         \
+Prematura	por su color poco apetecible                                                                                            \
+La Sper industrial	Aca en la zona tiene poco comercio                                                                                      \
+Doble Propsito	porque muchas veces sale mas amarga que dulce y la quiero para consumo                                                  \
+La Amarilla	Tiene buena producci\'f3n pero se necesita tener suelos adecuados                                                          \
+La Amarilla	en el momento no tiene buen comercio por ser una yuca amarga                                                  \
+La Sper industrial	Por su color ya que no es muy comercial            \
+Prematura	se necesita tener un suelo muy bueno para su producci\'f3n                                                                 \
+La rendidora	Se necesita de un suelo fertil para su alta producci\'f3n                                                                  \
+La Amarilla	El color es poco atractivo por lo general las personas prefieren una yuca blanca      \
+La rendidora	La yuca amarga por aqui no tiene comercio                                                                               \
+La rendidora	para que sea productiva mecesita tener un suelo adecuado                                                                \
+Prematura	es buena pero si estamos buscando producci\'f3n se queda corta con las otras                                               \
+Doble Propsito	porque el valor comercial actual                                                                                        \
+La rendidora	El color no es apetecido muy dif\'edcil venderla  \
+La Sper industrial	Por el color es poco apetecible      \
+La Sper industrial	es una yuca amarga y ac\'e1 no hay comercio para eso     \
+Doble Propsito	No me gusta cultivar yuca amarga por eso no me gusto                                         \
+La Amarilla	Por su color no es comercial                                                                                            \
+Prematura	poco comercial                                                                                                          \
+La Duradera	No me llamo mucho la atenci\'f3n como las otras                                                                            \
+Prematura	No tiene comercio en la zona y da\'f1a la tierra \
+La Sper industrial	Su color no es llamativo y no la hac\'e9 comercial                                                                         \
+Doble Propsito	necesito tener tierras mas adecuadas para que crezca y no es muy comercial                                              \
+La Sper industrial	no por que ella crece r\'e1pido y sale mala al momento de cocinar                                                          \
+Prematura	por el color que ella tiene es poco agradable                                                                           \
+Rapidita	por que da\'f1a la tierra  se da\'f1a y no la compran                                                                         \
+Doble Propsito	porque no cumple su ciclo de cosecha                                                                                    \
+Prematura	por su color no es confiable                                                                                            \
+Doble Propsito	no me agrada ninguna tipo de semilla industrial                                                                         \
+La Amarilla	por su color amarillo y no es harinosa                                                                                   \
+Rapidita	por que no es comercial y da\'f1a la tierra                                                                                \
+Doble Propsito	por su comercializaci\'f3n y da\'f1a la tierra                                                                                \
+Prematura	No le llam\'f3 la atenci\'f3n                                                                                                 \
+Prematura	no es acta para el terreno ni produce tanto                                                                             \
+Doble Propsito	No es comercial en la zona                                                                                              \
+La Sper industrial	no es buena para comercio en la zona                                                                                    \
+Rapidita	no es comercial                                                                                                         \
+La Sper industrial	es buena pero no tiene tanto comercio en la zona                                                                        \
+La Sper industrial	por el color y no es comercial en la zona                                                                               \
+La Sper industrial	no es comercial en la zona                                                                                              \
+La Duradera	en la zona se siembra para el consumo y el comercio y esta no es comercial en la zona                                   \
+La Duradera	no se adapta y rinde                                                                                                    \
+La Amarilla	no es preferencia en la zona                                                                                            \
+Rapidita	por el color y no es comercial en nuestra zona                                                                          \
+La Amarilla	no la conocen                                                                                                           \
+La Sper industrial	la fisonom\'eda de la semilla y pare menos y no es comercial en estas zonas                                                  \
+La Amarilla	no la he cultivado                                                                                                      \
+Prematura	Estamos buscando una variedad que sea superior en calida y en rendimento que no sea igual                               \
+La Sper industrial	es desconocida aunque es rapida la cosecha                                                                              \
+La Amarilla	baja producci\'f3n y no es comercial en la zona                                                                            \
+La Amarilla	por que no se adapta al clima donde vivo                                                                                \
+Doble Propsito	demora                                                                                                                  \
+Prematura	por que entiendo que dura menos                                                                                         \
+La Sper industrial	no se vende la yuca amarilla                                                                                            \
+La Sper industrial	se tienen muy poquitas oportunidades                                                                                    \
+La Sper industrial	por el porcentaje de producci\'f3n                                                                                         \
+Prematura	Es similar a otras variedades que ya conozco                                                                            \
+Prematura	Por que no tiene tanta producci\'f3n y se necesitan m\'e1s insumos para su producci\'f3n                                         \
+Doble Propsito	tiene menor porcentaje de producci\'f3n                                                                                    \
+La Amarilla	Por su color no es comercial                                                                                            \
+La Amarilla	por que crece mucho y sale amargo                                                                                       \
+Prematura	estamos buscando una variedad que sea superior no similar                                                               \
+La Amarilla	No es conocida y aceptada en el comercio                                                                                \
+Doble Propsito	No es comercial en la zona                                                                                              \
+La Duradera	la que germina antes de tiempo se coloca paluda (dura) y mala                                                                 \
+Rapidita	por su color no es muy comercial                                                                                        \
+Prematura	no me agrada por que no es muy conocido y no tienen mercado                                                             \
+Rapidita	es una yuca que es poco comercial y no es segura                                                                        \
+La Sper industrial	es buena pero el mercado de ella no es seguro                                                                           \
+Rapidita	no me gusta por que entiende a deshidratar la tierra y no tienen mercado                                                 \
+Rapidita	Aqui no se siembra esa yuca                                                                                             \
+La Sper industrial	Delicada para producci\'f3n                                                                                                                                                                               \
+La Sper industrial	aunque tiene buen rendimiento se necesitan suelos adecuados                                                             \
+La Amarilla	No es tan comercial adem\'e1s su color no la hace apetecible \
+La Duradera	No es tan comercial ac\'e1                                                                                                 \
+Rapidita	En comparaci\'f3n a las otras tiene poca producci\'f3n                                                                        \
+La Duradera	no es comercial                                                                                                         \
+La Amarilla	poco comercial                                                                                                          \
+La Amarilla	por que puede que este mas econ\'f3mico en el mercado                                                                      \
+Rapidita	por preferencia de la gente                                                                                             \
+La Duradera	menos comercial                                                                                                         \
+La rendidora	menos comercial                                                                                                         \
+Doble Propsito	Ya la prob\'e9 y no me gust\'f3                                                                                               \
+La Duradera	no es comercial en la zona      \
+\
+Rapidita\
+no es comercial por el color                                                                                            \
+La Amarilla\
+no tiene rendimiento y no es comercial en la zona                                                                       \
+La rendidora\
+No es comercial                                                                                                         \
+Doble Propsito\
+no es comercial                                                                                                         \
+Doble Propsito\
+porque en poco tienpo se pone mala                                                                                      \
+La Sper industrial\
+menos comercial                                                                                                         \
+Prematura\
+es poco comercial                                                                                                       \
+La Amarilla\
+me par\'e9ce  bueno pero no creo en los crecimientos adelantado                                                            \
+La Amarilla\
+Me gusto m\'e1s la primera                                                                                                 \
+Rapidita\
+Porque es de uso industrial                                                                                             \
+La Duradera\
+por que germina en el tiempo adecuado no cumple con su clico de crecimiento                                                \
+La Amarilla\
+nunca la he escuchado y sus caracter\'edsticas no me dan seguridad son semillas que no creen mucho                         \
+La Amarilla\
+por que no tiene comprador                                                                                              \
+La Sper industrial\
+por el tiempo de comercio                                                                                               \
+Prematura\
+no es comercial en la zona                                                                                              \
+Prematura\
+menor rendimiento de producion                                                                                          \
+La Amarilla\
+no es conocida en la zona                                                                                               \
+Prematura\
+baja produccion                                                                                                         \
+La rendidora\
+No conocida en la zona                                                                                                  \
+Doble Propsito\
+por su color no tiene mercado                                                                                         \
+La Amarilla\
+por que no se vende mucho y es para animales                                                                            \
+Prematura\
+no es comercial                                                                                                         \
+Prematura\
+no es comercial en la zona                                                                                              \
+La rendidora\
+No tiene un rendimiento superior al general                                                                             \
+Rapidita\
+Da menos en production solo del 20 o 30%\
+La Sper industrial\
+no tiene un buen comercio                                                                                               \
+Rapidita\
+porque la industrial da\'f1a la tierra y no es comercial                                                                   \
+Doble Propsito\
+No es muy conocida y ac\'e1 no hay tanto comercio para ese tipo de yuca                                                    \
+La Amarilla\
+ No tiene buena acogida en la zona ya que es similar una variedad que se cultiva por ac\'e1                      \
+Prematura\
+nunca he cultivado yuca amarga                                                                                          \
+La Amarilla\
+Como es \'91doble prop\'f3sito\'92 puede que me salga amarga                                                                       \
+La Duradera\
+ uno como productor busca una yuca que produzca bastante en comparaci\'f3n con la otra esta tiene menos producci\'f3n  \
+La Amarilla\
+El porcentaje de rendimiento productivo es inferior a la rendidora                                                      \
+Doble Propsito\
+Es parecida a una yuca que se conoce como \'91la bagre\'92 la cual no fue muy bien acogida     \
+Rapidita\
+Menor porcentaje de producci\'f3n en comparaci\'f3n a otras variedades como la doble prop\'f3sito\
+La Sper industrial\
+por que es industrial menos comercial                                                                                   \
+La Amarilla\
+No me gusto, me gusto m\'e1s la rendidora   \
+Rapidita\
+por el color no es comercial y por lo general las perdonas piensan que es yuca mala                                     \
+La Amarilla\
+ adem\'e1s su color es muy llamativo, Por ser una yuca amarga ac\'e1 en la zona no tiene comercio y toca ech\'e1rselo al ganado                                             \
+La Duradera\
+por que es una referencia de yuca amarga y no es comercial                                                               \
+La Amarilla\
+no me gusta trabajar con yuca industrial es muy da\'f1ina en la tierra y el precio es bajo                                 \
+La Amarilla\
+por su tiempo de comercio                                                                                               \
+La Duradera\
+por que no la conozco                                                                                                   \
+La Amarilla\
+No me pareci\'f3 llamativa                                                                                                 \
+Doble Propsito\
+no es comercial en la zona                                                                                              \
+La Sper industrial\
+no es comercial en la zona por el color                                                                                 \
+La Amarilla\
+no la conocen                                                                                                           \
+Doble Propsito\
+por que es menos y tiempo y queda delgada y menos rendimiento                                                           \
+La Amarilla\
+por la comercializaci\'f3n, por ser de color amarilla no tiene mercado\
+La Sper industrial\
+No es comercial en la zona                                                                                              \
+La Sper industrial\
+es menos rentabilidad                                                                                                   \
+Doble Propsito\
+no se maneja en la zona                                                                                                 \
+Doble Propsito\
+No tiene acogida en el mercado por el color                                                                             \
+La Sper industrial\
+su canal comercial no es bueno y da\'f1a la tierra                                                                         \
+La Sper industrial\
+Desconocida y no es comercial en la zona                                                                                \
+Prematura\
+por ser yuca amarga                                                                                                     \
+La Amarilla\
+Nunca la he cultivado                                                                                                   \
+Prematura\
+no es comercial en la zona                                                                                              \
+La Sper industrial\
+no es comercial en la zona                                                                                              \
+La Sper industrial\
+por su color amarillo                                                                                                   \
+La Sper industrial\
+por su tiempo de comercio                                                                                               \
+La Sper industrial\
+no vendo amarma este a\'f1o mucha gente se quedo con amarga                                                                \
+Prematura\
+prefiero el tiempo que ek rendimiento puede arrancar y sembrar mas r\'e1pido  \
+Prematura\
+coccion para que si no rinde                                                                                            \
+La Sper industrial\
+no tiene mercado                                                                                                        \
+La Amarilla\
+no la conoc\'eda                                                                                                           \
+Doble Propsito\
+no es comercial                                                                                                         \
+Prematura\
+por su color poco apetecible                                                                                            \
+La Sper industrial\
+Aca en la zona tiene poco comercio                                                                                      \
+Doble Propsito\
+porque muchas veces sale mas amarga que dulce y la quiero para consumo                                                  \
+La Amarilla\
+Tiene buena producci\'f3n pero se necesita tener suelos adecuados                                                          \
+La Amarilla\
+en el momento no tiene buen comercio por ser una yuca amarga                                                  \
+La Sper industrial\
+Por su color ya que no es muy comercial            \
+Prematura\
+se necesita tener un suelo muy bueno para su producci\'f3n                                                                 \
+La rendidora\
+Se necesita de un suelo fertil para su alta producci\'f3n                                                                  \
+La Amarilla\
+El color es poco atractivo por lo general las personas prefieren una yuca blanca      \
+La rendidora\
+La yuca amarga por aqui no tiene comercio                                                                               \
+La rendidora\
+para que sea productiva mecesita tener un suelo adecuado                                                                \
+Prematura\
+es buena pero si estamos buscando producci\'f3n se queda corta con las otras                                               \
+Doble Propsito\
+porque el valor comercial actual                                                                                        \
+La rendidora\
+El color no es apetecido muy dif\'edcil venderla  \
+La Sper industrial\
+Por el color es poco apetecible      \
+La Sper industrial\
+es una yuca amarga y ac\'e1 no hay comercio para eso     \
+Doble Propsito\
+No me gusta cultivar yuca amarga por eso no me gusto                                         \
+La Amarilla\
+Por su color no es comercial                                                                                            \
+Prematura\
+poco comercial                                                                                                          \
+La Duradera\
+No me llamo mucho la atenci\'f3n como las otras                                                                            \
+Prematura\
+No tiene comercio en la zona y da\'f1a la tierra \
+La Sper industrial\
+Su color no es llamativo y no la hac\'e9 comercial                                                                         \
+Doble Propsito\
+necesito tener tierras mas adecuadas para que crezca y no es muy comercial                                              \
+La Sper industrial\
+no por que ella crece r\'e1pido y sale mala al momento de cocinar                                                          \
+Prematura\
+por el color que ella tiene es poco agradable                                                                           \
+Rapidita\
+por que da\'f1a la tierra  se da\'f1a y no la compran                                                                         \
+Doble Propsito\
+porque no cumple su ciclo de cosecha                                                                                    \
+Prematura\
+por su color no es confiable                                                                                            \
+Doble Propsito\
+no me agrada ninguna tipo de semilla industrial                                                                         \
+La Amarilla\
+por su color amarillo y no es harinosa                                                                                   \
+Rapidita\
+por que no es comercial y da\'f1a la tierra                                                                                \
+Doble Propsito\
+por su comercializaci\'f3n y da\'f1a la tierra                                                                                \
+Prematura\
+No le llam\'f3 la atenci\'f3n                                                                                                 \
+Prematura\
+no es acta para el terreno ni produce tanto                                                                             \
+Doble Propsito\
+No es comercial en la zona                                                                                              \
+La Sper industrial\
+no es buena para comercio en la zona                                                                                    \
+Rapidita\
+no es comercial                                                                                                         \
+La Sper industrial\
+es buena pero no tiene tanto comercio en la zona                                                                        \
+La Sper industrial\
+por el color y no es comercial en la zona                                                                               \
+La Sper industrial\
+no es comercial en la zona                                                                                              \
+La Duradera\
+en la zona se siembra para el consumo y el comercio y esta no es comercial en la zona                                   \
+La Duradera\
+no se adapta y rinde                                                                                                    \
+La Amarilla\
+no es preferencia en la zona                                                                                            \
+Rapidita\
+por el color y no es comercial en nuestra zona                                                                          \
+La Amarilla\
+no la conocen                                                                                                           \
+La Sper industrial\
+la fisonom\'eda de la semilla y pare menos y no es comercial en estas zonas                                                  \
+La Amarilla\
+no la he cultivado                                                                                                      \
+Prematura\
+Estamos buscando una variedad que sea superior en calida y en rendimento que no sea igual                               \
+La Sper industrial\
+es desconocida aunque es rapida la cosecha                                                                              \
+La Amarilla\
+baja producci\'f3n y no es comercial en la zona                                                                            \
+La Amarilla\
+por que no se adapta al clima donde vivo                                                                                \
+Doble Propsito\
+demora                                                                                                                  \
+Prematura\
+por que entiendo que dura menos                                                                                         \
+La Sper industrial\
+no se vende la yuca amarilla                                                                                            \
+La Sper industrial\
+se tienen muy poquitas oportunidades                                                                                    \
+La Sper industrial\
+por el porcentaje de producci\'f3n                                                                                         \
+Prematura\
+Es similar a otras variedades que ya conozco                                                                            \
+Prematura\
+Por que no tiene tanta producci\'f3n y se necesitan m\'e1s insumos para su producci\'f3n                                         \
+Doble Propsito\
+tiene menor porcentaje de producci\'f3n                                                                                    \
+La Amarilla\
+Por su color no es comercial                                                                                            \
+La Amarilla\
+por que crece mucho y sale amargo                                                                                       \
+Prematura\
+estamos buscando una variedad que sea superior no similar                                                               \
+La Amarilla\
+No es conocida y aceptada en el comercio                                                                                \
+Doble Propsito\
+No es comercial en la zona                                                                                              \
+La Duradera\
+la que germina antes de tiempo se coloca paluda (dura) y mala                                                                 \
+Rapidita\
+por su color no es muy comercial                                                                                        \
+Prematura\
+no me agrada por que no es muy conocido y no tienen mercado                                                             \
+Rapidita\
+es una yuca que es poco comercial y no es segura                                                                        \
+La Sper industrial\
+es buena pero el mercado de ella no es seguro                                                                           \
+Rapidita\
+no me gusta por que entiende a deshidratar la tierra y no tienen mercado                                                 \
+Rapidita\
+Aqui no se siembra esa yuca                                                                                             \
+La Sper industrial\
+Delicada para producci\'f3n                                                                                                                                                                               \
+La Sper industrial\
+aunque tiene buen rendimiento se necesitan suelos adecuados                                                             \
+La Amarilla\
+No es tan comercial adem\'e1s su color no la hace apetecible \
+La Duradera\
+No es tan comercial ac\'e1                                                                                                 \
+Rapidita\
+En comparaci\'f3n a las otras tiene poca producci\'f3n                                                                        \
+La Duradera\
+no es comercial                                                                                                         \
+La Amarilla\
+poco comercial                                                                                                          \
+La Amarilla\
+por que puede que este mas econ\'f3mico en el mercado                                                                      \
+Rapidita\
+por preferencia de la gente                                                                                             \
+La Duradera\
+menos comercial                                                                                                         \
+La rendidora\
+menos comercial                                                                                                         \
+Doble Propsito\
+Ya la prob\'e9 y no me gust\'f3                                                                                               \
+La Duradera\
+no es comercial en la zona                                                                                              \
+\
+                                                                                        }
