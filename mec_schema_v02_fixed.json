@@ -1,0 +1,253 @@
+{
+  "A": [
+    {
+      "name": "Color de pulpa",
+      "definition": "Tonalidad interna de la raíz (amarilla vs blanca) observable al partirla, que influye en preferencia del comprador.",
+      "include_terms": ["color amarillo", "pulpa amarilla", "amarilla", "yuca blanca", "color de la pulpa", "por el color", "no es comercial por el color", "por su color no tiene mercado", "por su color amarillo", "color poco apetecible", "muy llamativo", "poco atractivo", "color llamativo"],
+      "exclude_terms": ["no me pareció llamativa", "poco apetecible (sin mencionar color)", "apariencia general", "forma de la raíz"],
+      "examples": []
+    },
+    {
+      "name": "Tipo de sabor (dulce vs amarga)",
+      "definition": "Carácter gustativo de la variedad (dulce/mesa o amarga/industrial) percibido al consumo o asociado a su uso.",
+      "include_terms": ["yuca amarga", "amarga", "más amarga que dulce", "no vendo amarga", "de mesa", "para consumo", "sabor dulce", "sabe amarga", "amarma (error)"],
+      "exclude_terms": ["uso industrial (sin mención de sabor)"],
+      "examples": []
+    },
+    {
+      "name": "Rendimiento en campo",
+      "definition": "Cantidad de producción por área o porcentaje relativo frente a otras variedades.",
+      "include_terms": ["baja producción", "baja produccion", "menor rendimiento", "no rinde", "porcentaje de producción", "porcentaje de produccion", "20 o 30%", "menos producción", "no tiene un rendimiento superior", "rinde menos", "se queda corta (en producción)"],
+      "exclude_terms": ["calibre/forma (delgada)"],
+      "examples": []
+    },
+    {
+      "name": "Calidad culinaria",
+      "definition": "Comportamiento al cocinar (harinosidad, textura, sabor) y resultado del plato. Funde ‘harinosidad’ y ‘salida al cocinar’ para evitar solapamiento.",
+      "include_terms": ["no es harinosa", "sale mala al cocinar", "sale mala al momento de cocinar", "cocción", "coccion", "calidad de cocción", "paluda (dura)", "textura dura", "poco apetecible al cocinar"],
+      "exclude_terms": ["color (amarilla/blanca)"],
+      "examples": []
+    },
+    {
+      "name": "Vida útil postcosecha",
+      "definition": "Duración en buen estado de la raíz después de cosechada antes de deteriorarse.",
+      "include_terms": ["en poco tiempo se pone mala", "se pone mala", "vida útil", "vida util", "tiempo de comercio (vida en anaquel)", "se daña rápido", "postcosecha corta"],
+      "exclude_terms": ["ciclo de cultivo (siembra a cosecha)"],
+      "examples": []
+    },
+    {
+      "name": "Longitud del ciclo",
+      "definition": "Tiempo desde siembra a cosecha y cumplimiento del ciclo fenológico.",
+      "include_terms": ["cosecha rápida", "prefiero el tiempo", "demora", "ciclo largo", "no cumple su ciclo de crecimiento", "germina antes de tiempo", "crecimientos adelantado", "rápida la cosecha"],
+      "exclude_terms": ["vida útil postcosecha", "rotación de mercado"],
+      "examples": []
+    },
+    {
+      "name": "Adaptación al suelo",
+      "definition": "Compatibilidad con tipos de suelo y necesidad de fertilidad específica.",
+      "include_terms": ["suelos adecuados", "suelo adecuado", "suelo fértil", "suelo fertil", "no es apta para el terreno", "no es acta para el terreno (error)", "tierras más adecuadas", "necesita buen suelo"],
+      "exclude_terms": ["clima/zona (no suelo)"],
+      "examples": []
+    },
+    {
+      "name": "Adaptación al clima/zona",
+      "definition": "Desempeño en condiciones agroclimáticas locales y manejo habitual en la zona.",
+      "include_terms": ["no se maneja en la zona", "no es comercial en la zona (como señal de adaptación)", "no es conocida en la zona", "no la conocen", "no se adapta al clima", "acá en la zona", "no es preferencia en la zona"],
+      "exclude_terms": ["precio bajo", "desconocida (sin referencia a zona)"],
+      "examples": []
+    },
+    {
+      "name": "Difusión y conocimiento local",
+      "definition": "Grado de conocimiento previo y experiencia local con la variedad.",
+      "include_terms": ["no la he cultivado", "nunca la he escuchado", "no la conocía", "no muy conocida", "desconocida", "no la conocen", "desconocida en la zona"],
+      "exclude_terms": ["riesgo/seguridad (valor)", "falla de adaptación (clima/suelo)"],
+      "examples": []
+    },
+    {
+      "name": "Segmento de uso/mercado",
+      "definition": "Enfoque de la variedad hacia uso industrial, de mesa o doble propósito.",
+      "include_terms": ["uso industrial", "industrial", "de mesa", "doble propósito", "doble proposito", "para animales", "yuca industrial"],
+      "exclude_terms": ["amarga/dulce (sabor)"],
+      "examples": []
+    },
+    {
+      "name": "Impacto percibido en el suelo",
+      "definition": "Efectos negativos atribuidos al cultivo sobre la salud del suelo.",
+      "include_terms": ["daña la tierra", "deshidratar la tierra", "muy dañina en la tierra", "daña el suelo"],
+      "exclude_terms": ["mayor costo de manejo (insumos)"],
+      "examples": []
+    },
+    {
+      "name": "Exigencia de insumos",
+      "definition": "Necesidad de mayores insumos o manejo para alcanzar producción esperada.",
+      "include_terms": ["se necesitan más insumos", "requiere más manejo", "exigente", "más fertilizantes", "más insumos", "costosa en insumos"],
+      "exclude_terms": ["solo suelo/clima (sin mención de insumos)"],
+      "examples": []
+    },
+    {
+      "name": "Calibre/forma de raíz",
+      "definition": "Grosor y conformación de la raíz comercial.",
+      "include_terms": ["queda delgada", "calibre", "forma de la raíz", "raíz delgada", "fisonomía de la semilla (forma)"],
+      "exclude_terms": ["rendimiento (porcentaje/volumen)"],
+      "examples": []
+    },
+    {
+      "name": "Atractivo visual externo",
+      "definition": "Percepción de llamatividad o apariencia general que incide en compra.",
+      "include_terms": ["no me pareció llamativa", "no es llamativo", "poco apetecible", "muy llamativo", "apariencia", "no es atractiva"],
+      "exclude_terms": ["color amarillo", "yuca blanca", "color"],
+      "examples": []
+    },
+    {
+      "name": "Variabilidad del rasgo",
+      "definition": "Inestabilidad percibida en características clave entre cosechas o plantas.",
+      "include_terms": ["puede que salga amarga", "a veces sale más amarga", "no es segura", "no es confiable", "variabilidad", "sale diferente"],
+      "exclude_terms": ["desconocida (falta de experiencia)"],
+      "examples": []
+    }
+  ],
+  "C": [
+    {
+      "name": "Dificultad de comercialización",
+      "definition": "Problemas para vender la cosecha o colocarla en el mercado local.",
+      "include_terms": ["no es comercial", "poco comercio", "no tiene mercado", "difícil venderla", "no tiene comprador", "no tiene acogida", "no es preferencia", "no es tan comercial", "no es comercial en la zona", "poco comercial", "canal comercial no es bueno", "mercado no es seguro", "se tienen muy poquitas oportunidades", "no tiene buena acogida"],
+      "exclude_terms": ["precio bajo (cuando se menciona explícitamente)"],
+      "examples": []
+    },
+    {
+      "name": "Menor ingreso por bajo precio",
+      "definition": "Disminución de ingresos por precios inferiores obtenidos en la venta.",
+      "include_terms": ["precio es bajo", "valor comercial actual", "más económico en el mercado", "baja paga", "precio bajo"],
+      "exclude_terms": ["no tiene mercado (sin precio)"],
+      "examples": []
+    },
+    {
+      "name": "Baja productividad",
+      "definition": "Menos volumen cosechado respecto a alternativas, con impacto directo en ventas.",
+      "include_terms": ["baja producción", "baja produccion", "menor rendimiento", "menor porcentaje de producción", "da menos", "se queda corta", "20 o 30%", "produce menos"],
+      "exclude_terms": ["calibre/forma delgada (sin volumen)"],
+      "examples": []
+    },
+    {
+      "name": "Riesgo por desconocimiento",
+      "definition": "Incertidumbre y percepción de riesgo al cultivar variedades poco conocidas.",
+      "include_terms": ["no la conozco", "no la he cultivado", "desconocida", "no me da seguridad", "no es segura", "no es confiable", "no la conocía"],
+      "exclude_terms": ["no se adapta al clima (adaptación)"],
+      "examples": []
+    },
+    {
+      "name": "Rechazo del consumidor",
+      "definition": "Preferencias del comprador que penalizan color, sabor o apariencia.",
+      "include_terms": ["prefieren yuca blanca", "poco apetecible", "muy llamativo", "no me pareció llamativa", "no tiene buena acogida", "color poco atractivo"],
+      "exclude_terms": ["no tiene mercado (estructural)"],
+      "examples": []
+    },
+    {
+      "name": "Destino de bajo valor",
+      "definition": "Desvío hacia usos menos rentables como alimentación animal.",
+      "include_terms": ["para animales", "toca echárselo al ganado", "ganado", "no de mesa"],
+      "exclude_terms": ["uso industrial (como segmento)"],
+      "examples": []
+    },
+    {
+      "name": "Mayor costo/esfuerzo de manejo",
+      "definition": "Necesidad de suelos específicos o más insumos que elevan costos.",
+      "include_terms": ["se necesitan más insumos", "suelos adecuados", "suelo fértil", "tierras más adecuadas", "más manejo", "más trabajo"],
+      "exclude_terms": ["daña la tierra (impacto)"],
+      "examples": []
+    },
+    {
+      "name": "Fallas de adaptación",
+      "definition": "Problemas de ajuste al clima o a la zona que reducen el desempeño.",
+      "include_terms": ["no se adapta al clima", "no se maneja en la zona", "no es conocida en la zona", "no es apta para el terreno", "no es acta para el terreno (error)"],
+      "exclude_terms": ["desconocida (sin relación a desempeño)"],
+      "examples": []
+    },
+    {
+      "name": "Deterioro y pérdidas postcosecha",
+      "definition": "Daños y merma por descomposición o vida útil corta.",
+      "include_terms": ["se pone mala", "en poco tiempo se pone mala", "vida útil corta", "se daña rápido", "pérdidas postcosecha"],
+      "exclude_terms": ["ciclo de cultivo"],
+      "examples": []
+    },
+    {
+      "name": "Impacto negativo en el suelo",
+      "definition": "Percepción de degradación del suelo que compromete ciclos futuros.",
+      "include_terms": ["daña la tierra", "deshidratar la tierra", "muy dañina en la tierra", "afecta el suelo"],
+      "exclude_terms": ["más insumos (costo)"],
+      "examples": []
+    },
+    {
+      "name": "Oportunidad de rotación limitada",
+      "definition": "Ciclos largos o problemas de ciclo que impiden rotaciones ágiles.",
+      "include_terms": ["no cumple su ciclo", "demora", "germina antes de tiempo y se daña", "rotación lenta", "ciclo fenológico problemático"],
+      "exclude_terms": ["vida útil postcosecha"],
+      "examples": []
+    }
+  ],
+  "V": [
+    {
+      "name": "Rentabilidad sostenida",
+      "definition": "Maximizar utilidades por combinación de buen precio, alta productividad y bajos costos.",
+      "include_terms": ["rentabilidad", "precio es bajo", "valor comercial", "menor porcentaje de producción", "difícil venderla", "mercado", "ingreso", "paga"],
+      "exclude_terms": [],
+      "examples": []
+    },
+    {
+      "name": "Seguridad y certeza",
+      "definition": "Minimizar riesgos técnicos y de mercado, prefiriendo opciones confiables y conocidas.",
+      "include_terms": ["no es segura", "no es confiable", "no la conozco", "mercado no es seguro", "desconocida", "riesgo"],
+      "exclude_terms": [],
+      "examples": []
+    },
+    {
+      "name": "Aceptación del mercado",
+      "definition": "Alinear el producto a gustos del comprador para asegurar salida comercial.",
+      "include_terms": ["no tiene acogida", "prefieren yuca blanca", "no es comercial", "no tiene mercado", "poco apetecible", "buena acogida"],
+      "exclude_terms": [],
+      "examples": []
+    },
+    {
+      "name": "Calidad para consumo familiar",
+      "definition": "Valorar sabor dulce y buena cocción para alimentación en el hogar.",
+      "include_terms": ["de mesa", "harinosa", "sale mala al cocinar", "más amarga que dulce", "consumo", "buena cocción"],
+      "exclude_terms": [],
+      "examples": []
+    },
+    {
+      "name": "Cuidado del suelo y sostenibilidad",
+      "definition": "Evitar prácticas y materiales percibidos como dañinos para la salud del suelo.",
+      "include_terms": ["daña la tierra", "deshidratar la tierra", "muy dañina en la tierra", "sostenible", "cuidar el suelo"],
+      "exclude_terms": [],
+      "examples": []
+    },
+    {
+      "name": "Eficiencia temporal",
+      "definition": "Valorar ciclos que permitan rotaciones ágiles y menores pérdidas por tiempo.",
+      "include_terms": ["prefiero el tiempo", "cosecha rápida", "demora", "no cumple su ciclo", "tiempo de comercio", "rotar rápido"],
+      "exclude_terms": [],
+      "examples": []
+    },
+    {
+      "name": "Compatibilidad con condiciones locales",
+      "definition": "Preferir variedades adaptadas a suelos y clima de la zona para reducir fallas.",
+      "include_terms": ["suelos adecuados", "suelo fértil", "no se maneja en la zona", "no se adapta al clima", "apta para el terreno", "condiciones locales"],
+      "exclude_terms": [],
+      "examples": []
+    },
+    {
+      "name": "Simplicidad de manejo",
+      "definition": "Minimizar requerimientos de insumos y complejidad operativa.",
+      "include_terms": ["se necesitan más insumos", "tierras más adecuadas", "exigente", "manejo", "menos trabajo", "facilidad de manejo"],
+      "exclude_terms": [],
+      "examples": []
+    },
+    {
+      "name": "Estabilidad del desempeño",
+      "definition": "Valorar consistencia en rasgos (sabor, rendimiento) entre ciclos para planificar mejor.",
+      "include_terms": ["a veces sale más amarga", "puede que salga amarga", "no es confiable", "variabilidad", "estable", "consistente"],
+      "exclude_terms": [],
+      "examples": []
+    }
+  ]
+}

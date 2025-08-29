@@ -1,0 +1,687 @@
+{
+  "A": [
+    {
+      "name": "Rendimiento en campo",
+      "definition": "Cantidad de producción por área o por planta (‘pare más’, % adicional). Incluye señales vegetativas asociadas al rendimiento para evitar solapamientos con ‘calibre’.",
+      "include_terms": [
+        "rinde",
+        "pare más",
+        "alto rendimiento",
+        "rendimiento productivo",
+        "mayor productividad",
+        "produce más",
+        "20 o 30% más",
+        "rinde bastante",
+        "muy rendidora",
+        "rinde mas el cultivo",
+        "rendimiento mayor",
+        "rendimiento en cosecha",
+        "da más rendimiento por tonelada",
+        "más productiva",
+        "alta producción",
+        "rendimiento favorable",
+        "rendimiento y producción",
+        "se ve más productora",
+        "mata más cargada",
+        "mayor follaje"
+      ],
+      "exclude_terms": [
+        "calibre",
+        "raíz gruesa",
+        "contextura (tamaño)",
+        "solo ‘comercial’ sin mención de volumen"
+      ],
+      "examples": [
+        "La rendidora tiene de 20 o 30% más de rendimiento",
+        "Es yuca que pare mucho y es muy rendidora",
+        "Por su alta producción y adaptabilidad"
+      ]
+    },
+    {
+      "name": "Durabilidad postcosecha",
+      "definition": "Tiempo que la raíz permanece en buen estado después de ser arrancada (vida útil). Fusiona ‘tiempo de duración’ y ‘conservación’ para evitar duplicidad.",
+      "include_terms": [
+        "dura más después de cosechar",
+        "mayor tiempo de duración",
+        "demora más sin dañarse",
+        "mejor tiempo de conservación",
+        "no se daña pronto",
+        "vida alta después de cosecha",
+        "durabilidad postcosecha",
+        "conserva después de arrancar",
+        "tiempo de duración después de cosecha",
+        "no se coloca borra",
+        "vida útil larga",
+        "se conserva"
+      ],
+      "exclude_terms": [
+        "cosecha rápida (ciclo)",
+        "ahorro de gas (cocción)"
+      ],
+      "examples": [
+        "Dura más tiempo después de cosechar",
+        "Demora más sin dañarse después de arrancarla",
+        "Se conserva durante y después de cosecha"
+      ]
+    },
+    {
+      "name": "Rapidez de cosecha (ciclo corto)",
+      "definition": "Longitud del ciclo desde siembra hasta cosecha; variedades que ‘salen’ o ‘se cosechan’ más rápido.",
+      "include_terms": [
+        "más rápido de arrancar",
+        "tiempo de cosecha",
+        "se produce más rápido",
+        "pare más rápido",
+        "el producto se obtiene más rápido",
+        "sale rápido",
+        "tiempo de producción menor",
+        "demora menos para cosechar",
+        "más rápida su cosecha",
+        "cosecha a los 6 meses",
+        "ciclo corto"
+      ],
+      "exclude_terms": [
+        "duración postcosecha",
+        "rápida cocción (cocina)"
+      ],
+      "examples": [
+        "Se produce más rápido",
+        "Porque su tiempo de producción es menor",
+        "La semilla es más rápida a la hora de cosechar"
+      ]
+    },
+    {
+      "name": "Adaptación al clima",
+      "definition": "Desempeño bajo condiciones climáticas locales (se adapta a cualquier clima, a climas de la zona).",
+      "include_terms": [
+        "se adapta al clima",
+        "condiciones climáticas",
+        "cualquier clima",
+        "adaptabilidad a los climas",
+        "tolerante al clima",
+        "se adapta a las condiciones del clima",
+        "se adapta a todo (clima)",
+        "cambio climático de la zona",
+        "zona Caribe (clima)"
+      ],
+      "exclude_terms": [
+        "solo ‘comercial’ sin clima",
+        "solo ‘suelo/terreno’"
+      ],
+      "examples": [
+        "Se adapta a cualquier clima",
+        "Se adapta a las condiciones del clima",
+        "Por su adaptabilidad a los climas"
+      ]
+    },
+    {
+      "name": "Adaptación al suelo/terreno",
+      "definition": "Compatibilidad con tipos de suelo o terrenos específicos de la zona.",
+      "include_terms": [
+        "apta para el terreno",
+        "se adapta al terreno",
+        "se adapta a la tierra",
+        "terreno de la zona",
+        "tierra de la costa caribe",
+        "terreno donde se cultiva",
+        "acta para el terreno (error)"
+      ],
+      "exclude_terms": [
+        "solo clima",
+        "insumos/costos"
+      ],
+      "examples": [
+        "Se adapta al terreno de la zona",
+        "Se adapta a la tierra de la costa caribe",
+        "La semilla es acta para el terreno y dura más"
+      ]
+    },
+    {
+      "name": "Resistencia a plagas/enfermedades",
+      "definition": "Tolerancia o resistencia biótica que reduce daños por plagas o enfermedades.",
+      "include_terms": [
+        "resistente a plagas",
+        "tolerante a plagas",
+        "resistencia a enfermedades",
+        "menos plagas",
+        "resiatencia a enfermedades (error)",
+        "certificada que tenga resistencia",
+        "bajo costo para combatir plagas"
+      ],
+      "exclude_terms": [
+        "solo ‘salud’ humana",
+        "solo ‘comercial’"
+      ],
+      "examples": [
+        "Por su resistencia a las plagas y rendimiento",
+        "Resistente a las plagas y por rendimiento",
+        "Por su resistencia a enfermedades y a los climas"
+      ]
+    },
+    {
+      "name": "Segmento de uso/mercado (doble propósito)",
+      "definition": "Enfoque de uso: mesa (consumo), industrial o doble propósito (dos mercados). Fusiona ‘versatilidad de uso’ y ‘dos mercados’.",
+      "include_terms": [
+        "doble propósito",
+        "dos mercados",
+        "consumo humano e industrial",
+        "opciones de venta industrial",
+        "autoconsumo y negocio",
+        "yuca comestible e industrial",
+        "sirve para autoconsumo",
+        "dos salidas"
+      ],
+      "exclude_terms": [
+        "dulce/amarga (sabor)",
+        "solo ‘comercial’ sin uso"
+      ],
+      "examples": [
+        "Por su doble propósito ya que sirve para auto consumo y negocio",
+        "Tiene dos opciones de mercado",
+        "Porque al venderla tengo dos opciones para consumo humano o para empresas industriales"
+      ]
+    },
+    {
+      "name": "Calidad culinaria",
+      "definition": "Desempeño en cocina (harinosidad, cocción, textura, sabor dulce). Fusiona ‘harinosa’, ‘cocción rápida’ y ‘textura’ para evitar solapamientos.",
+      "include_terms": [
+        "harinosa",
+        "sale harinosa",
+        "textura",
+        "cocción rápida",
+        "economiza tiempo en cocción",
+        "ahorrar gas",
+        "sabrosa",
+        "sabor dulce",
+        "buena para consumo",
+        "calidad de yuca",
+        "textura al cocinar",
+        "poco desperdicio en cocina"
+      ],
+      "exclude_terms": [
+        "color (blanco) salvo como apoyo de calidad",
+        "rendimiento"
+      ],
+      "examples": [
+        "La rendidora cocina más rápido",
+        "Me gusta porque es muy harinosa",
+        "Ahorra gas al cocinar"
+      ]
+    },
+    {
+      "name": "Color de pulpa (blanco)",
+      "definition": "Tonalidad interna (blanco) asociada a preferencia del consumidor y percepción de calidad.",
+      "include_terms": [
+        "color blanco",
+        "buen color",
+        "mantener su color",
+        "se parece a la blanca",
+        "blanco y harinosa (mención de color)"
+      ],
+      "exclude_terms": [
+        "amarilla/vitaminas (cuando el foco es nutrición)",
+        "apariencia general sin color"
+      ],
+      "examples": [
+        "Por su rendimiento al cosechar junto a su color blanco y harinoso",
+        "Tiene un buen color",
+        "Por que su color blanco y el rendimiento"
+      ]
+    },
+    {
+      "name": "Atractivo visual externo",
+      "definition": "Apariencia general percibida (buena apariencia, más llamativa) distinta del color específico.",
+      "include_terms": [
+        "buena apariencia",
+        "más llamativa",
+        "apariencia para el consumidor",
+        "contextura llamativa (visual)",
+        "se ve rendidora (percepción visual)"
+      ],
+      "exclude_terms": [
+        "color blanco",
+        "calibre/tamaño como medida física"
+      ],
+      "examples": [
+        "Es conocida y tiene una buena apariencia para el consumidor",
+        "La semilla es más gruesa y más llamativa",
+        "Me gusta por el rendimiento y durabilidad… se ve rendidora"
+      ]
+    },
+    {
+      "name": "Calibre/contextura de raíz",
+      "definition": "Tamaño o grosor comercial de la raíz (‘más gruesa’, ‘contextura’).",
+      "include_terms": [
+        "raíz más gruesa",
+        "contextura",
+        "gruesa",
+        "calibre alto",
+        "tamaño de raíz"
+      ],
+      "exclude_terms": [
+        "rendimiento (volumen total)",
+        "solo apariencia sin tamaño"
+      ],
+      "examples": [
+        "La semilla es más gruesa y más llamativa",
+        "Por su rendimiento y contextura",
+        "Contextura y rendimiento"
+      ]
+    },
+    {
+      "name": "Familiaridad varietal",
+      "definition": "Similitud con referencias locales conocidas (p. ej., Chirosa) que facilitan adopción.",
+      "include_terms": [
+        "parecida a la Chirosa",
+        "similar a la de la zona",
+        "se asemeja a la de la zona",
+        "se parece a la que se siembra",
+        "similar a variedad comercial de la zona"
+      ],
+      "exclude_terms": [
+        "solo ‘comercial’ sin referencia varietal"
+      ],
+      "examples": [
+        "Tiene un parecido a la Chirosa",
+        "Se asemeja a la semilla Chirosa",
+        "Se parece a la que uno siembra en la zona"
+      ]
+    },
+    {
+      "name": "Certificación/garantía",
+      "definition": "Atributos formales de garantía (p. ej., certificada con resistencia).",
+      "include_terms": [
+        "certificada",
+        "garantía de resistencia",
+        "certificada que tenga resistencia",
+        "validada"
+      ],
+      "exclude_terms": [
+        "resistencia sin mención de certificación"
+      ],
+      "examples": [
+        "Certificada que tenga resistencia",
+        "Garantía de resistencia a enfermedades",
+        "Variedad validada (implícito)"
+      ]
+    }
+  ],
+  "C": [
+    {
+      "name": "Mayor productividad efectiva",
+      "definition": "Más volumen cosechado que aumenta la oferta vendible.",
+      "include_terms": [
+        "alto rendimiento",
+        "produce más",
+        "mayor productividad",
+        "rinde más",
+        "rendimiento productivo",
+        "da más por tonelada",
+        "muy rendidora",
+        "rinde más esta",
+        "mayor producción y rendimiento",
+        "se ve más productiva"
+      ],
+      "exclude_terms": [
+        "solo ‘comercial’ sin volumen",
+        "solo ‘calibre’"
+      ],
+      "examples": [
+        "Por su alto rendimiento en cosecha",
+        "Mayor producción y rendimiento",
+        "Da más rendimiento por tonelada"
+      ]
+    },
+    {
+      "name": "Mejor comercialización/salida al mercado",
+      "definition": "Facilita la venta (‘más comercial’, ‘mejor comercio’, salida rápida).",
+      "include_terms": [
+        "más comercial",
+        "mejor comercio",
+        "tiene comercio",
+        "salida al mercado",
+        "facilidad de venta",
+        "permite vender más rápido",
+        "mejor para comercio",
+        "mejor comercialización",
+        "comercial en la zona",
+        "dos opciones de mercado"
+      ],
+      "exclude_terms": [
+        "precio/ganancia explícitos (ver rentabilidad)"
+      ],
+      "examples": [
+        "Es más comercial en la zona",
+        "Mayor duración y rendimiento perfectos para la salida al mercado",
+        "Permite vender más rápido"
+      ]
+    },
+    {
+      "name": "Mayor rentabilidad/ganancia",
+      "definition": "Mejor margen económico para el productor por combinación de rendimiento, precio y costos.",
+      "include_terms": [
+        "gano más",
+        "más rentable",
+        "rentabilidad",
+        "mejora la economía",
+        "aporta mayor rentabilidad",
+        "produce más y más rentable"
+      ],
+      "exclude_terms": [
+        "solo ‘comercial’ sin ingresos",
+        "solo ‘productividad’"
+      ],
+      "examples": [
+        "Gano más (mayor rentabilidad)",
+        "Mejora la economía",
+        "Produce más y más rentable"
+      ]
+    },
+    {
+      "name": "Menores pérdidas postcosecha",
+      "definition": "Menor deterioro luego de la cosecha que reduce mermas y urgencia de venta.",
+      "include_terms": [
+        "dura más después de cosechar",
+        "mayor tiempo de duración",
+        "no se daña pronto",
+        "mejor conservación",
+        "tiempo que demora después de arrancar"
+      ],
+      "exclude_terms": [
+        "rapidez de cosecha",
+        "cocción"
+      ],
+      "examples": [
+        "Dura buen tiempo después de cosechar",
+        "Demora más sin dañarse",
+        "Mejor tiempo de conservación"
+      ]
+    },
+    {
+      "name": "Eficiencia temporal en campo",
+      "definition": "Cosecha/producción en menos tiempo que libera recursos y acelera rotaciones.",
+      "include_terms": [
+        "más rápido al cosechar",
+        "tiempo de producción menor",
+        "se produce más rápido",
+        "sale rápido",
+        "cosecha a los 6 meses",
+        "ahorra tiempo en campo"
+      ],
+      "exclude_terms": [
+        "ahorro de tiempo en cocina (ver culinaria)"
+      ],
+      "examples": [
+        "Es más rápido al cosechar",
+        "Porque su tiempo de producción es menor",
+        "Se produce más rápido"
+      ]
+    },
+    {
+      "name": "Reducción de costos/riesgos fitosanitarios",
+      "definition": "Menos presión de plagas/enfermedades y menor gasto en control.",
+      "include_terms": [
+        "resistente a plagas",
+        "resistencia a enfermedades",
+        "menos plagas",
+        "tolerante a plagas",
+        "bajo costo para combatir plagas",
+        "tolerante a las plaga y el clima"
+      ],
+      "exclude_terms": [
+        "solo atributo de resistencia sin aludir a impacto"
+      ],
+      "examples": [
+        "Bajo costo para combatir plagas",
+        "Resistente a enfermedades y a los climas",
+        "Menos plagas y rendimiento mayor"
+      ]
+    },
+    {
+      "name": "Versatilidad de mercado",
+      "definition": "Opción de colocar en dos canales (mesa e industria) o combinar venta y autoconsumo.",
+      "include_terms": [
+        "dos mercados",
+        "doble propósito",
+        "consumo humano o empresas industriales",
+        "yuca comestible e industrial",
+        "autoconsumo y negocio",
+        "dos salidas"
+      ],
+      "exclude_terms": [
+        "solo ‘comercial’ general"
+      ],
+      "examples": [
+        "Tiene dos opciones de mercado",
+        "Sirve para autoconsumo y negocio",
+        "Puedo vender como yuca dulce y a la industria"
+      ]
+    },
+    {
+      "name": "Beneficio culinario",
+      "definition": "Mejor experiencia de cocina y consumo (cocción rápida, ahorro de gas, harinosa, sabrosa).",
+      "include_terms": [
+        "harinosa",
+        "cocina más rápido",
+        "ahorrar gas",
+        "textura al cocinar",
+        "sabrosa",
+        "poco desperdicio",
+        "buena para consumo",
+        "calidad de cocción"
+      ],
+      "exclude_terms": [
+        "solo rendimiento",
+        "color sin cocina"
+      ],
+      "examples": [
+        "Cocina más rápido",
+        "Ahorra gas al cocinar",
+        "Es muy harinosa"
+      ]
+    },
+    {
+      "name": "Salud y nutrición",
+      "definition": "Percepción de aporte a la salud (vitaminas, digestiva).",
+      "include_terms": [
+        "salud humana",
+        "beneficios para la salud",
+        "vitaminas",
+        "salud digestiva",
+        "buena para la salud"
+      ],
+      "exclude_terms": [
+        "salud del cultivo (plagas)"
+      ],
+      "examples": [
+        "Por sus beneficios para la salud humana",
+        "Por sus vitaminas",
+        "Nos ayuda a la salud digestiva"
+      ]
+    },
+    {
+      "name": "Reducción de desperdicios",
+      "definition": "Menos desperdicio en cosecha o cocina, mayor aprovechamiento del producto.",
+      "include_terms": [
+        "no da mucho desperdicio",
+        "aprovechamiento",
+        "menos desperdicio",
+        "rinde el producto"
+      ],
+      "exclude_terms": [
+        "mermas por postcosecha (ver pérdidas postcosecha)"
+      ],
+      "examples": [
+        "No da mucho desperdicio",
+        "Rinde más el producto",
+        "Aprovechamiento del producto"
+      ]
+    },
+    {
+      "name": "Menor riesgo de adopción",
+      "definition": "Mayor confianza por adaptabilidad y similitud con variedades locales conocidas.",
+      "include_terms": [
+        "similar a la de la zona",
+        "parecida a la Chirosa",
+        "se asemeja a la que se siembra",
+        "conocimiento previo",
+        "es conocida"
+      ],
+      "exclude_terms": [
+        "solo ‘comercial’ sin referencia a confianza"
+      ],
+      "examples": [
+        "Es conocida y tiene buena apariencia",
+        "Se asemeja a la semilla Chirosa",
+        "Se parece a la que uno siembra en la zona"
+      ]
+    }
+  ],
+  "V": [
+    {
+      "name": "Rentabilidad sostenida",
+      "definition": "Maximizar y estabilizar utilidades combinando mayor producción, venta ágil y control de costos.",
+      "include_terms": [
+        "más rentable",
+        "gano más",
+        "rentabilidad",
+        "mejora la economía",
+        "aporta mayor rentabilidad",
+        "produce más y más rentable",
+        "permite vender más rápido",
+        "tiene comercio"
+      ],
+      "exclude_terms": [],
+      "examples": [
+        "Gano más (mayor rentabilidad)",
+        "Produce más y más rentable",
+        "Permite vender más rápido"
+      ]
+    },
+    {
+      "name": "Seguridad y certeza",
+      "definition": "Reducir el riesgo técnico y comercial mediante adaptabilidad y familiaridad varietal.",
+      "include_terms": [
+        "se adapta al clima",
+        "se adapta al terreno",
+        "similar a la de la zona",
+        "es conocida",
+        "certificada",
+        "confiable",
+        "dos salidas (flexibilidad)"
+      ],
+      "exclude_terms": [],
+      "examples": [
+        "Se adapta a las condiciones del clima",
+        "Se parece a la que uno siembra en la zona",
+        "Certificada que tenga resistencia"
+      ]
+    },
+    {
+      "name": "Eficiencia temporal",
+      "definition": "Ahorrar tiempo en campo y cocina para liberar recursos y reducir costos.",
+      "include_terms": [
+        "más rápido de cosechar",
+        "tiempo de producción menor",
+        "economiza tiempo en cocción",
+        "cocina más rápido",
+        "ahorrar gas",
+        "sale rápido"
+      ],
+      "exclude_terms": [],
+      "examples": [
+        "Más rápido al cosechar",
+        "Economiza tiempo en cocción",
+        "Cocina más rápido"
+      ]
+    },
+    {
+      "name": "Aceptación del mercado",
+      "definition": "Alinear el producto a gustos del comprador para asegurar salida estable.",
+      "include_terms": [
+        "más comercial",
+        "salida al mercado",
+        "buena apariencia para el consumidor",
+        "tiene comercio",
+        "mejor comercio",
+        "preferida por gente"
+      ],
+      "exclude_terms": [],
+      "examples": [
+        "Es más comercial en la zona",
+        "Buena apariencia para el consumidor",
+        "Salida al mercado"
+      ]
+    },
+    {
+      "name": "Bienestar y salud del hogar",
+      "definition": "Valorar beneficios percibidos para la salud y el consumo familiar.",
+      "include_terms": [
+        "beneficios para la salud",
+        "salud humana",
+        "vitaminas",
+        "salud digestiva",
+        "apta para consumo humano",
+        "sabrosa"
+      ],
+      "exclude_terms": [],
+      "examples": [
+        "Beneficios para la salud humana",
+        "Es apta para el consumo humano",
+        "Salud digestiva"
+      ]
+    },
+    {
+      "name": "Autosuficiencia y flexibilidad",
+      "definition": "Poder alternar entre autoconsumo y venta, y elegir entre dos mercados según conveniencia.",
+      "include_terms": [
+        "autoconsumo y negocio",
+        "dos mercados",
+        "doble propósito",
+        "dos salidas",
+        "opciones de venta"
+      ],
+      "exclude_terms": [],
+      "examples": [
+        "Sirve para autoconsumo y negocio",
+        "Dos opciones de mercado",
+        "Doble propósito"
+      ]
+    },
+    {
+      "name": "Continuidad productiva",
+      "definition": "Mantener flujos constantes gracias a durabilidad postcosecha y resistencia a problemas.",
+      "include_terms": [
+        "dura más después de cosechar",
+        "mayor tiempo de duración",
+        "resistente a plagas",
+        "se conserva",
+        "menos pérdidas"
+      ],
+      "exclude_terms": [],
+      "examples": [
+        "Dura buen tiempo después de cosechar",
+        "Resistente a plagas",
+        "Se conserva después de arrancar"
+      ]
+    },
+    {
+      "name": "Calidad y satisfacción del consumo",
+      "definition": "Disfrutar de un alimento harinoso, sabroso y de buena textura.",
+      "include_terms": [
+        "harinosa",
+        "sabrosa",
+        "buena textura",
+        "textura al cocinar",
+        "calidad de yuca",
+        "cocina bien"
+      ],
+      "exclude_terms": [],
+      "examples": [
+        "Es muy harinosa",
+        "Sabrosa",
+        "Textura y color además de que se adapta"
+      ]
+    }
+  ]
+}
